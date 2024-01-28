@@ -12,7 +12,7 @@ int findBinary(int val){
      return ans;
 }
 
-int main(){
+int main(){git
     int value;
     cout<<"enter decimal value to find correct binary value from given decimal value :"<<endl;
     cin>>value;
