@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 
-int findDecimal(int value){
-   int num = value, ans = 0, mul = 1, rem;
+int findDecimal(int num){
+   ans = 0, mul = 1, rem;
    while(num>0){
     rem = num%10;
     num/=10;
@@ -14,7 +14,7 @@ int findDecimal(int value){
 
 int main(){
    int val;
-   cout<<"enter binary value to find decimal value : ";
+   cout<<"enter binary value to find decimal value : "<<endl;
    cin>>val;
 
    int decimalVal = findDecimal(val);
