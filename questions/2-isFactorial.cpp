@@ -19,5 +19,3 @@ int main(){
    cout<<"factorial of 'b' is = "<<fact(b)<<endl;
    cout<<"factorial of 'b-a' is = "<<fact(b-a)<<endl;
 }
-
-//https://github.com/AzeemKhan27/DSA-Remote.git
