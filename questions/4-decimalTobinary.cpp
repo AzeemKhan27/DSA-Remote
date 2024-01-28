@@ -14,7 +14,7 @@ int findBinary(int val){
 
 int main(){git
     int value;
-    cout<<"enter decimal value to find correct binary value from given decimal value :"<<endl;
+    cout<<"enter decimal value to find correct value of binary from given decimal value :"<<endl;
     cin>>value;
 
     int binaryVal = findBinary(value);
