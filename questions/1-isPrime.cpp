@@ -19,5 +19,3 @@ int main(){
    bool isPrime(num);
    cout<<num;
 }
-
-git remote add origin https://github.com/AzeemKhan27/DSA-Remote.git
