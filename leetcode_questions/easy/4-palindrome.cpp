@@ -28,6 +28,7 @@ Constraints:
 */
 
 #include<iostream>
+#include <climits>
 using namespace std;
 
 bool isPalindromeNumber(int num){
@@ -36,6 +37,8 @@ bool isPalindromeNumber(int num){
     while(number > 0){
         rem = number%10;
         number/=10;
+        if(ans > INT_MAX/10)
+        return 0;
         ans = ans*10+rem;
     }
     // if(num == ans)
