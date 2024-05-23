@@ -3,8 +3,16 @@ using namespace std;
 
 char convert(char alpha){
 
-   int diff = alpha - 32;
-   char ans = static_cast<char>(diff);
+   // 1 Approach
+   // int diff = alpha - 32;
+   // char ans = static_cast<char>(diff);
+
+   // 2 Approach
+
+   int ans = alpha - 'a' + 'A';
+   if(ans < 97){
+      cout<< "please enter small alphabetic letter :"<< endl;
+   }
    return ans;
 }
 int main(){
