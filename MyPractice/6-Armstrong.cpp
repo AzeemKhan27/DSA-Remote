@@ -2,7 +2,7 @@
 #include<cmath>
 using namespace std;
 
-int armStrong(int num,int digits){
+bool armStrong(int num,int digits){
     int temp = num, rem;
     int sum = 0;
     while(temp != 0){
@@ -29,18 +29,12 @@ int countDigits(int num){
 }
 
 int main(){
-   int num, digits;
+   int num;
    cout<<"enter number to find armstrong/narcissistic number and counts digits :" <<endl;
    cin>>num;
-   digits = countDigits(num);
-   cout<<"Count Digits : " <<digits <<endl; 
-   
-   int isArmStrong = armStrong(num, digits);
+   int digits = countDigits(num);
 
-   if(isArmStrong)
-    cout<<num << " is an Armstrong number "<<endl;
-   else
-    cout<<num << " is not an Armstrong number "<<endl;
+    cout<<armStrong(num, digits) <<endl;
 
    return 0;
 }
