@@ -5,7 +5,6 @@ int main(){
   int num;
    cout<<"enter the number to make half pyramid :" <<endl;
    cin>>num;
-   
 
    //Star
    for(int row=1; row<=num; row++){
