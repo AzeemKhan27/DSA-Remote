@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-void numeric_half_pyramid(int num) {
+void numeric_inverted_half_pyramid(int num) {
      
 
     for(int row=1; row<=num; row++){                 // Aproach-1
 
-        for(int col=1; col<=row; col++){
+        for(int col=row; col<=num-row; col++){
             cout<<col<<" ";
         }
         cout<<endl;
@@ -17,10 +17,10 @@ void numeric_half_pyramid(int num) {
 
 int main() {
     int num;
-    cout << "Enter the number of rows and columns to make a numeric-half_pyramid shape by stars: " << endl;
+    cout << "Enter the number of rows and columns to make a numeric_inverted_half_pyramid shape by stars: " << endl;
     cin >> num; 
 
-    numeric_half_pyramid(num);
+    numeric_inverted_half_pyramid(num);
     
     return 0;
 }
