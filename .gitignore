@@ -1,1 +1,9 @@
 **/output/
+
+# Ignore all files without an extension in the root directory
+*.[^.]*
+
+# Allow specific files with known extensions
+!*.cpp
+!*.h
+!*.md
