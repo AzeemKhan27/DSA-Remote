@@ -1,9 +1,19 @@
 **/output/
 
-# Ignore all files without an extension in the root directory
-*.[^.]*
+# Ignore .vscode folder and its contents
+.vscode/
 
-# Allow specific files with known extensions
-!*.cpp
-!*.h
-!*.md
+# Ignore everything
+*
+
+# Allow directories to keep the structure intact
+!*/
+
+# Allow all .cpp files in all directories
+!**/*.cpp
+
+
+# Allow README files (add patterns as needed)
+!README.md
+!README.txt
+!README
