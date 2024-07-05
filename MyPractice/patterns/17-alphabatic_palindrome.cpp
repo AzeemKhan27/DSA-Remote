@@ -24,9 +24,9 @@ void alpha_palindrome(int num) {
 int main() {
     int num;
     cout << "Enter the number of num to make alphabetic palindrome : " <<endl;
-    // cin >> num; 
+    cin >> num; 
 
-    alpha_palindrome(6);
+    alpha_palindrome(num);
     
     return 0;
 }
@@ -34,15 +34,10 @@ int main() {
 
 // //OUTPUT :
 //row = 6
-            // 1
-            // 2*2
-            // 3*3*3
-            // 4*4*4*4
-            // 5*5*5*5*5
-            // 6*6*6*6*6*6
-            // 6*6*6*6*6*6
-            // 5*5*5*5*5
-            // 4*4*4*4
-            // 3*3*3
-            // 2*2
-            // 1
+
+        // A 
+        // A B A 
+        // A B C B A 
+        // A B C D C B A 
+        // A B C D E D C B A 
+        // A B C D E F E D C B A 
