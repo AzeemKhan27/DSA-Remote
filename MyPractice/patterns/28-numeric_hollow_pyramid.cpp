@@ -1,43 +1,88 @@
 #include <iostream>
 using namespace std;
 
-void numeric_hollow_pyramid(int num) {
+// void numeric_hollow_pyramid(int num) {
      
 
-    for(int row=1; row<=num; row++){                 // Aproach-1
+//     for(int row=1; row<=num; row++){                 // Aproach-1
 
 
-        //Spaces
+//         //Spaces
 
-        for(int col=1; col<=num-row; col++){
+//         for(int col=1; col<=num-row; col++){
+//             cout<<" ";
+//         }
+
+//         for(int col=1; col<=row; col++){
+//             if(col==1 || row == num){
+//                 cout<<col << " ";
+//             }
+//             else{
+//                 cout<<" ";
+//             }
+//         }
+
+//         //right side num
+
+//         for(int col=2; col<=num-1; col++){
+
+//             if(col==row ){
+//                 cout<<col<<" ";
+//             }
+//             else{
+//                 cout<<" ";
+//             }
+//         }
+       
+//         cout<<endl;
+        
+//     }          
+   
+// }
+
+
+// Approach-II
+
+void numeric_hollow_pyramid(int num){
+
+    for(int row=0; row<num; row++){
+
+        //spaces
+        for(int col=0; col<=num-row+1; col++){
             cout<<" ";
         }
-
-        for(int col=1; col<=row; col++){
-            if(col==1 || row == num){
-                cout<<col << " ";
+ 
+        int start = 1;
+        //numbers with spaces in between
+        for(int col=0; col < 2*row+1; col+=1 ){
+            //first and last row
+            if(row == 0 || row == num-1){
+                if(col % 2 == 0){
+                    
+                    //even
+                    cout<<start;
+                    start+=1;
+                }
+                else{
+                    //odd
+                    cout<<" ";
+                }
             }
             else{
-                cout<<" ";
+                //first col
+                if(col == 0){
+                    cout<< 1;
+                }
+                else if(col==2*row+1-1){
+                    cout<<row+1;
+                }
+                else{
+                    cout<<" ";
+                }
             }
         }
-
-        //right side num
-
-        for(int col=2; col<=num-1; col++){
-
-            if(col==row ){
-                cout<<col<<" ";
-            }
-            else{
-                cout<<" ";
-            }
-        }
-       
         cout<<endl;
-        
-    }          
-   
+    }
 }
 
 int main() {
