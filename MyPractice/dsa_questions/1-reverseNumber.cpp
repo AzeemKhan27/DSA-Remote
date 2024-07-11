@@ -5,11 +5,18 @@ void reverseNumber(int num) {
 
        int n = num;
 
-       while(n>0){
+    //    while(n>0){
+    //     int rem = n % 10;
+    //     cout<<rem;
+    //     n/=10;
+    //    }
+
+    //Approach-II
+
+    for(; n>0; n/=10){
         int rem = n % 10;
-        cout<<rem;
-        n/=10;
-       }
+        cout<<rem<<" ";
+    }
        cout<<endl;
 }
 
