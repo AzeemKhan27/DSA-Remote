@@ -18,4 +18,6 @@ int main(){
    cin>>num;
    bool isPrime(num);
    cout<<num;
+
+   return 0;
 }
