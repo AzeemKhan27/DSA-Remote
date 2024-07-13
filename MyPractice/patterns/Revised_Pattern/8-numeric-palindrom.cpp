@@ -13,7 +13,6 @@ void numeric_palindrom(int num) {
             cout<<col<<" ";
         }
 
-
         for(int col=row-1; col>=1; col--){
             cout<<col<<" ";
         }
@@ -23,8 +22,6 @@ void numeric_palindrom(int num) {
         // }
 
         cout<<endl;
-
-        // for(int)
        
     }
 }
