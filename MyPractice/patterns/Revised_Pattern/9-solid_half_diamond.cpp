@@ -11,6 +11,13 @@ void solid_half_diamond(int num) {
         cout<<endl;
        
     }
+
+    for(int i=1; i<num; i++){
+        for(int j=1; j<=num-i; j++){
+            cout<<"*"<<" ";
+        }
+        cout<<endl;
+    }
 }
 
 int main() {
