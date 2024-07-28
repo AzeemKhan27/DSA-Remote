@@ -1,1 +1,19 @@
 **/output/
+
+# Ignore .vscode folder and its contents
+.vscode/
+
+# Ignore everything
+*
+
+# Allow directories to keep the structure intact
+!*/
+
+# Allow all .cpp files in all directories
+!**/*.cpp
+
+
+# Allow README files (add patterns as needed)
+!README.md
+!README.txt
+!README
