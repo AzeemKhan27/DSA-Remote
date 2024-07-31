@@ -9,7 +9,7 @@ void extremeNumber (int arr[], int size){
 
     if (start >= size) {
         cout << "Start index is out of bounds." << endl;
-        return 0;
+        return;
        }
 
     // while(true){
