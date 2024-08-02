@@ -4,19 +4,19 @@
 using namespace std;
 
 // Solution:
-int power(int x, int n){
-    int res = 1;
+// int power(int x, int n){
+//     int res = 1;
     
-    while(n>0){
-        if(n%2==1){
-        res *= x;
-     }
+//     while(n>0){
+//         if(n%2==1){
+//         res *= x;
+//      }
 
-     x*=x;
-     n/=2;
-    }
-    return res;
-}
+//      x*=x;
+//      n/=2;
+//     }
+//     return res;
+// }
 
 // Efficient Solution:
 
