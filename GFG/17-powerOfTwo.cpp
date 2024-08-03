@@ -2,15 +2,28 @@
 using namespace std;
 
 // Naive Solution
+// bool isPowerTwo(int n) {
+//     if(n == 0) return false;;
+
+//     while(n != 1){
+//         if(n % 2 != 0) return false;
+
+//         n/=2;
+//     }
+//     return true;
+// }
+
+// Efficient Solution
+
+// bool isPowerTwo(int n) {
+//     if(n == 0) return false;
+
+//     return ((n&(n-1)) == 0);
+// }
+
+// Short and Efficient Solution
 bool isPowerTwo(int n) {
-    if(n == 0) return false;;
-
-    while(n != 1){
-        if(n % 2 != 0) return false;
-
-        n/=2;
-    }
-    return true;
+    return (n&&((n&(n-1)) == 0));
 }
 
 int main() {
