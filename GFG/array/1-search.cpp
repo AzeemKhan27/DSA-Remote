@@ -20,7 +20,7 @@ int main(){
     cin>>x;
 
     int index = searchArray(v,x);
-
+    
     if(index != -1){
         cout << "Searched Number " << index << endl;
     } else {
