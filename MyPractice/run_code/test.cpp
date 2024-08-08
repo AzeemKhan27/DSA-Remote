@@ -14,12 +14,12 @@ int main(){
     int rightShift = 5 >> 2;
     int leftShift = 5 << 2;
     int xorBit = 5 ^ 3;
-    cout<<"AND : "<<checkBitwiseAnd<<endl;
-    cout<<"OR : "<<checkBitwiseOR<<endl;
-    cout<<"rightShift : "<<rightShift<<endl;
-    cout<<"leftShift : "<<leftShift<<endl;
-    cout<<"xorBit : "<<xorBit<<endl;
-    cout<<"X:" << x = x&(x-1);
+    // cout<<"AND : "<<checkBitwiseAnd<<endl;
+    // cout<<"OR : "<<checkBitwiseOR<<endl;
+    // cout<<"rightShift : "<<rightShift<<endl;
+    // cout<<"leftShift : "<<leftShift<<endl;
+    // cout<<"xorBit : "<<xorBit<<endl;
+    // cout<<"X:" << x = x&(x-1);
 
 
     // int arr[]={9,12,2,11,2,2,10,9,12,10,9,11,0};
@@ -32,4 +32,7 @@ int main(){
 
     //     cout<<" "<<x;
     // }
+
+    int arr[2]={1,2};
+    cout<<"ANS:"<<0[arr]<<","<<1[arr]<<endl;
 }   
