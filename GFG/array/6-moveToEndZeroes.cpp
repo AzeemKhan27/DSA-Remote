@@ -15,14 +15,29 @@ using namespace std;
 // }
 
 // Efficient Solution:
+// int zeroesMoveToEnd(int arr[], int n){
+//     int count = 0;
+//     for(int i=0; i<n; i++){
+//         if(arr[i] == 0){
+//             swap(arr[i],arr[count]);
+//             count++;
+//         }
+//     }
+// }
+
+// 2
+
 int zeroesMoveToEnd(int arr[], int n){
     int count = 0;
-    for(int i=0; i<n; i++){
-        if(arr[i] == 0){
-            swap(arr[i],arr[count]);
-            count++;
+
+    for(int i=0; i<n; i++)
+        if(arr[i] != 0){
+            arr[count++] = arr[i];
+
+    for(int i=0; i<n; i++)
+    arr[i] = 0;
+
         }
-    }
 }
 
 int main(){
