@@ -2,18 +2,30 @@
 using namespace std;
 
 // Efficient Solution:
-int leaderOfArray(int arr[], int n){
-    int curr_leader = arr[n-1]; // last element.
+// int leaderOfArray(int arr[], int n){
+//     int curr_leader = arr[n-1]; // last element.
  
 
-    for(int i = n-2; i >= 0; i--){
-        if(arr[i] > curr_leader){
-            curr_leader = arr[i]; // update leader.
-        }
+//     for(int i = n-2; i >= 0; i--){
+//         if(arr[i] > curr_leader){
+//             curr_leader = arr[i]; // update leader.
+//         }
         
-    }
-    cout << curr_leader << endl; // Print the final leader.
-    return curr_leader; // Optional, if you want to return the leader.
+//     }
+//     cout << curr_leader << endl; // Print the final leader.
+//     return curr_leader; // Optional, if you want to return the leader.
+// }
+
+int leaderOfArray(int arr[], int n){
+     int curr_leader = arr[n-1];
+
+     for(int i=n-1; i>=0; i--){
+        if(curr_leader < arr[i]){
+            curr_leader = arr[i];
+        }
+     }
+     cout << curr_leader << " "; // Print the leader.
+     return curr_leader;
 }
 
 int main(){
