@@ -1,5 +1,7 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
+
 using namespace std;
 
 int firstOccurrence(vector<int>& arr, int target){
@@ -34,5 +36,11 @@ int main(){
     int indexOfFirstOccurrence = firstOccurrence(v,target);
     
     cout<<"answer is : "<<indexOfFirstOccurrence <<endl;
+
+    // Using Predefined Functions in C++ to find lower bound or first occurrence.
+
+    auto ans2 = lower_bound(v.begin(),v.end(),target);
+    cout<<"Using lower_bound() : "<<(ans2 - v.begin())<<endl;
+
     return 0;
 }
