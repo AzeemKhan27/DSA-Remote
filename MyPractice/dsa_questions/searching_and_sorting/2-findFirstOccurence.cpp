@@ -2,9 +2,9 @@
 #include<vector>
 using namespace std;
 
-int firstOccurrence(vector<int>& v, int target){
+int firstOccurrence(vector<int>& arr, int target){
     int start = 0;
-    int end = v.size()-1;
+    int end = arr.size()-1;
     int mid = start +(end - start)/2;
     int ans = -1;
 
@@ -33,6 +33,6 @@ int main(){
     int target = 4;
     int indexOfFirstOccurrence = firstOccurrence(v,target);
     
-    cout<<"ans is "<<indexOfFirstOccurrence <<endl;
+    cout<<"answer is : "<<indexOfFirstOccurrence <<endl;
     return 0;
 }
