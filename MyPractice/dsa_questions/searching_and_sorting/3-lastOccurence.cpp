@@ -1,5 +1,7 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
+
 using namespace std;
 
 int lastOccurence(vector<int>& arr, int target) {
@@ -32,5 +34,11 @@ int main() {
     int target = 7;
     int lastIndex = lastOccurence(arr, target);
     cout << "Last Occurrence of " << target << " is at index: " << lastIndex << endl;
+
+    // Using Predefined Functions in C++ to find upper bound or last occurence
+
+     auto ans2 = upper_bound(arr.begin(),arr.end(),target);
+     cout<<"Using upper_bound() : "<<(ans2 - arr.begin())<<endl;
+
     return 0;
 }
