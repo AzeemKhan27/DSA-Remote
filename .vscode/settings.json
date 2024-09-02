@@ -5,5 +5,7 @@
         "*.tcc": "cpp",
         "cmath": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "pieces.cloudCapabilities": "Blended",
+    "pieces.telemetry": true
 }
