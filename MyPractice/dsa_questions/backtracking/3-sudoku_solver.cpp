@@ -50,7 +50,7 @@ bool sudoku_solver(int n){    //this function returns true or false depending on
     for(int j=0; j<n; j++){
         //check for empty cells
         if(board[i][j] == 0){
-            for(int val=1; val<=9; val++){
+            for(int val=1; val<=9; val++){  
 
                 //check if value is safe to insert into board? //Safety Check
                 if(isSafe(val,i,j)){
