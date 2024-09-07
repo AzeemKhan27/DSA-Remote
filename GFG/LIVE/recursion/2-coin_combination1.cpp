@@ -22,5 +22,22 @@ int Rec(int curr_sum, int a[], int n){
 }
 
 int main(){
+    int n;
+    cout<<"Enter the size of the array: ";
+    cin>>n;
 
+    int a[n];
+    cout<<"Enter the elements of the array: ";
+    for(int i=0; i<n; i++){
+        cin>>a[i];
+    }
+
+    int sum;
+    cout<<"Enter the sum: ";
+    cin>>sum;
+
+    int res = Rec(sum, a, n);
+    cout<<"Number of ways to get the sum: "<<res<<endl;
+
+    return 0;
 }
