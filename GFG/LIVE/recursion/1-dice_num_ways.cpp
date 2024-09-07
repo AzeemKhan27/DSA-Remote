@@ -13,7 +13,7 @@ int recDiceWays(int curr_sum){
         if(d>curr_sum) {
             break;
         }
-        
+
         sum += recDiceWays(curr_sum - i);
     }
 
@@ -22,6 +22,4 @@ int recDiceWays(int curr_sum){
 
 int main(){
     int ans = 0;
-
-
 }
