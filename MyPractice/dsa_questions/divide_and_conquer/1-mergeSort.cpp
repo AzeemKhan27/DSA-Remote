@@ -27,7 +27,6 @@ void merge(int *arr, int s, int e){
         k+=1;
     }
  
-
     //merge logic
     int leftIndex = 0;
     int rightIndex = 0; 
@@ -45,7 +44,6 @@ void merge(int *arr, int s, int e){
             // mainArrayIndex++;
         }
     }
-
 
     //copy logic for left array
 
