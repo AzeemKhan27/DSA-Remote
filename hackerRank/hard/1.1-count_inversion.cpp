@@ -44,3 +44,4 @@ long countInversions(vector<int> arr) {
     c = mergeSort(arr, temp, 0, arr.size() - 1);
     return c;
 }
+  
