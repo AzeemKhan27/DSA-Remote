@@ -30,3 +30,27 @@ int main() {
     cout << "Max adjacent product: " << solution(inputArray) << endl;
     return 0;
 }
+
+
+
+// JavaScript Code 
+
+function solution(inputArray) {
+    // Ensure the input has at least 2 elements
+    if (inputArray.length < 2) {
+        return 0; // Not enough elements to form a product
+    }
+
+    // Initialize maxProduct to the smallest possible value to handle negative products
+    let maxProduct = Number.MIN_SAFE_INTEGER;
+
+    // Loop through the array and calculate the product of adjacent elements
+    for (let i = 0; i < inputArray.length - 1; i++) {
+        let product = inputArray[i] * inputArray[i + 1];
+        
+        // Update maxProduct if the current product is larger
+        maxProduct = Math.max(maxProduct, product);
+    }
+
+    return maxProduct;
+}
