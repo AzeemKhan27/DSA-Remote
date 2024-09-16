@@ -2,6 +2,19 @@
 #include<vector>
 using namespace std;
 
+vector<int> G[numberOfNodes+1];
+
+void dfs(int s){
+    vis[s] =1;
+    
+        if(vis[e] != 1){
+            dfs(e);
+        }
+    }
+}
+
+// Iss Code ko ratna hi hai
+
 int main(){
     int numberOfNodes,numberOfEdges;
 
@@ -19,9 +32,7 @@ int main(){
 
         G[y].push_back(x);
 
-    }
-
- 
+    } 
 
     // Print the elements
 
