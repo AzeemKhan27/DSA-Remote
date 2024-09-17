@@ -15,9 +15,9 @@ int solution(vector<int> statues){
     int largest = statues[statues.size() - 1];
 
     //Step-3: Calculate the number of additional statues needed
-    int additional = (largest-smallest+1) - statues.size();
+    int required_statues = (largest-smallest+1) - statues.size();
 
-    return additional;
+    return required_statues;
 }
 
 int main(){
