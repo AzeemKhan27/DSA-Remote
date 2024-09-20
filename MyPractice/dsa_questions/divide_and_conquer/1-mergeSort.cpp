@@ -18,7 +18,8 @@ void merge(int *arr, int s, int e){
     int k = s;
     for(int i=0; i<len1; i++){
         left[i] = arr[k];
-        k+=1;
+        k+=1; 
+        // k = k+1
     }
 
     k = mid+1;
