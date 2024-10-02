@@ -3,7 +3,7 @@ using  namespace std;
 
 int solveMe(vector<int> &coins, int amt, vector<int> &dp){
     //base case
-    if(amt == 0) return 0
+    if(amt == 0) return 0;
     if(amt < 0) return INT_MAX;
 
     //step-1 base case k just baad check kro kya ans pehle se exist hai ya nhi;
