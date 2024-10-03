@@ -46,7 +46,7 @@ int print_element_spiral(vector<vector<int>>& matrix){
         return ans;
     }
 };
-
+    
 // Function to print the elements in spiral order
 void print_element_spiral(vector<vector<int>>& matrix) {
     vector<int> result = spiralOrder(matrix); // Get the spiral order
@@ -69,5 +69,5 @@ int main() {
     // Call the function to print elements in spiral order
     print_element_spiral(matrix);
 
-    return 0;
+    return 0;   
 }
