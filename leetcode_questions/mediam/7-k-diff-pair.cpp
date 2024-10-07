@@ -4,6 +4,7 @@
 #include<set>
 using namespace std;
 
+// using two points
 int findPairs(vector<int>& nums, int k) {
     sort(nums.begin(), nums.end());
     set<pair<int, int>> ans;
@@ -25,6 +26,7 @@ int findPairs(vector<int>& nums, int k) {
     }
     return ans.size();
 }
+
 
 int main(){
     int n;
