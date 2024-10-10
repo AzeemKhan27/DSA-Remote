@@ -26,7 +26,7 @@ vector<int>twoPtrMethod(const vector<int>&arr, int k, int x){
 
     // OR USING STL function Like below code:
 
-    return vector<int>(arr.begin()+low, arr.begin(+high+1)); //using STL 
+    return vector<int>(arr.begin()+low, arr.begin() + high+1); //using STL 
 }
 
 vector<int> findClosest(vector<int>& arr, int k, int x){
