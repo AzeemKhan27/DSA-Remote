@@ -27,7 +27,7 @@ int BinarySearch(int arr[], int startIndex, int endIndex, int searchElementX){
 
 }
 
-
+// Approach-I : find X element in array, if we have "n" array size also
 int exponential_search(int arr[], int n, int x){
     if(arr[0] == x) {
         return 0;
@@ -43,11 +43,43 @@ int exponential_search(int arr[], int n, int x){
     return BinarySearch(arr, startIndex, endIndex, x);
 }
 
+//Approach-II : if we have to find element from "Infinite array"
+
+int exponential_search_with_infinite_array(int Arr[], int X){
+
+    if(Arr[0] == X){
+        return 0;
+    }
+    
+    int i = 0;
+    int j = 1;
+
+    while(Arr[j] < X){
+        i = j;
+        j *= 2;
+    }
+
+    int start = i/2;
+    int end = j;
+
+    return BinarySearch(Arr, start, end, X);
+}
+
+
 int main(){
     int arr[]={2,4,5,6,11,13,14,15,56,70};
     int n=sizeof(arr)/sizeof(arr[0]);
     int x = 13;
-    int ans = exponential_search(arr,n,x);
+    int ans = exponential_search_with_infinite_array(arr,x);
     cout<<"Searched Value is = "<<ans<<endl;
     return 0;
 }
+
+// int main(){
+//     int arr[]={2,4,5,6,11,13,14,15,56,70};
+//     int n=sizeof(arr)/sizeof(arr[0]);
+//     int x = 13;
+//     int ans = exponential_search(arr,n,x);
+//     cout<<"Searched Value is = "<<ans<<endl;
+//     return 0;
+// }
